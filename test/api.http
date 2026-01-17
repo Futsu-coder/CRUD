@@ -1,115 +1,46 @@
-
-###
-GET http://localhost:3000/api/users
-###
-GET http://localhost:3000/api/roles
-###
-GET http://localhost:3000/api/products
-###
-
-POST http://localhost:3000/api/users
+POST http://localhost:3000/api/Supplier
 Content-Type: application/json
 
 {
-  "name": "John Doe",
-  "email": "john@doe.com"
-}
-###
-
-POST http://localhost:3000/api/users
-Content-Type: application/json
-
-{
-  "name": "John Doe",
-  "email": "john@doe"
-}
-###
-
-POST http://localhost:3000/api/products
-Content-Type: application/json
-
-{
-  "product_id": 12345,
-  "product_name": "Sun Snack",
-  "product_price" : 1.99,
-  "product_cost": 0.99,
-  "note" : "อร่อยดี"
-}
-###
-POST http://localhost:3000/api/products
-Content-Type: application/json
-
-{
-  "product_id": 1234,
-  "product_name": "Sun Snack",
-  "product_price" : 1.99,
-  "product_cost": 0.99,
-  "note" : "อร่อยดี"
-}
-###
-
-POST http://localhost:3000/api/products
-Content-Type: application/json
-
-{
-  "product_id": 12345,
-  "product_name": "Sun Snack",
-  "product_price" : 2.00,
-  "product_cost": 0.99,
-  "note" : "อร่อยดี"
-}
-###
-
-POST http://localhost:3000/api/users
-Content-Type: application/json
-
-{
-  "username": "John Doe5",
-  "password": "John12345",
-  "firstname": "John",
-  "lastname": "Doe"
+  "Name": "ABC Supplier",
+  "Contact": "Alice",
+  "Address": "123 Main St, Cityville",
+  "Phone": "123-456-7890",
+  "Email": "alice@abcsupplier.com"
 }
 
 ###
 
-GET http://localhost:3000/api/users
-
-###
-
-PUT http://localhost:3000/api/users/5
+POST http://localhost:3000/api/Supplier
 Content-Type: application/json
 
 {
-  "firstname": "Jane",
-  "lastname": "Doe"
+  "Name": "CBA Supplier",
+  "Contact": "Tom",
+  "Address": "456 Main St, Cityville",
+  "Phone": "789-654-3210",
+  "Email": "Tom@abcsupplier.com"
 }
 
 ###
 
-DELETE http://localhost:3000/api/users/7
+GET http://localhost:3000/api/Supplier
 
 ###
 
-POST http://localhost:3000/api/roles
+PUT http://localhost:3000/api/Supplier/3
 Content-Type: application/json
 
 {
-  "name": "User"
+  "Name": "Toon",
+  "Contact": "Toon Smith",
+  "Address": "Phayo University",
+  "Phone": "091-027-9513",
+  "Email": "rftcd6vfyh@gmail.com"
 }
 
 ###
 
-GET http://localhost:3000/api/roles
+DELETE http://localhost:3000/api/Supplier/1
 
 ###
-
-PUT http://localhost:3000/api/roles/6
-Content-Type: application/json
-
-{
-  "name":"Cilent"
-}
-
-###
-
-DELETE http://localhost:3000/api/roles/6
